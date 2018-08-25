@@ -1,0 +1,235 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="en" xmlns:wb="http://open.weibo.com/wb" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head><meta class="foundation-mq-small" /><meta class="foundation-mq-small-only" /><meta class="foundation-mq-medium" /><meta class="foundation-mq-medium-only" /><meta class="foundation-mq-large" /><meta class="foundation-mq-large-only" /><meta class="foundation-mq-xlarge" /><meta class="foundation-mq-xlarge-only" /><meta class="foundation-mq-xxlarge" /><meta class="foundation-data-attribute-namespace" />
+    <meta charset="utf-8" />
+        <title>用户登录 - DS足球</title>
+            <link rel="shortcut icon" href="/favicon.ico" />
+            <meta property="qc:admins" content="1642520177643251156375" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=1" />
+                                <link rel="stylesheet" href="/assets/css/app.min.css?_=186" />
+    <script async="" src="https://www.google-analytics.com/analytics.js"></script><script src="//hm.baidu.com/hm.js?a68414d98536efc52eeb879f984d8923"></script><script src="/assets/vendor/modernizr/modernizr.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery.min.js"></script>
+            <script type="text/javascript" src="/assets/js/jquery.validate.min.js"></script>
+    
+                        <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+                        hm.src = "//hm.baidu.com/hm.js?a68414d98536efc52eeb879f984d8923";
+                        var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+                (
+            function(i,s,o,g,r,a,m) {
+                i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            }
+        )(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-103630682-1', 'auto');
+        ga('send', 'pageview');
+            </script>
+            <script>var is_en = 0;</script>
+    <meta name="baidu_ssp_verify" content="f295905cd1eff2ed30979a429504cb6b" />
+    <style></style><meta class="foundation-mq-topbar" /></head>
+<body>
+<div class="wrapperV2 ">
+        <nav class="topNavBar" id="topBar">
+      <div class="row">
+        <div class="small-12 columns">
+          <div class="topNavBarInner">
+            <dl class="sub-nav topNav">
+                <dd>
+                                                            <a class="logo" href="//www.dszuqiu.com/" style="padding:14px 0 10px 0;">足球即时比分</a>
+                                                          </dd>
+                              <dd><a href="//www.dszuqiu.com/2018"><img src="/assets/images/worldcup2018/iconCup.png" class="MT-3 MRMini" width="10" />世界杯</a></dd>
+                              
+                <dd><a href="//live.dszuqiu.com">即时比分</a></dd>
+                                <dd><a href="//live.dszuqiu.com/corner">角球比分</a></dd>
+                                                                        <dd class="dsHasDropdown ">
+                        <a data-dropdown="diaryDropdown" aria-controls="diaryDropdown" aria-expanded="false" data-options="is_hover:true; hover_timeout:100; align:left;" onclick="window.location='//www.dszuqiu.com/diary'">比赛日程</a>
+                        <ul id="diaryDropdown" class="f-dropdown topNavBarDropdown" data-dropdown-content="" aria-hidden="true" tabindex="-1">
+                            <li><a href="//www.dszuqiu.com/jczq">竞彩足球</a></li>
+                            <li><a href="//www.dszuqiu.com/bjdc">北京单场</a></li>
+                        </ul>
+                    </dd>
+                                                    <dd><a href="//www.dszuqiu.com/data">足球赛事</a></dd>
+                                                                            <dd class="dsHasDropdown ">
+                            <a data-dropdown="newsDropdown" aria-controls="newsDropdown" aria-expanded="false" data-options="is_hover:true; hover_timeout:100; align:left;" onclick="window.location='//www.dszuqiu.com/articles'">足球资讯</a>
+                            <ul id="newsDropdown" class="f-dropdown topNavBarDropdown" data-dropdown-content="" aria-hidden="true" tabindex="-1">
+                                <li><a href="//www.dszuqiu.com/articles/lottery">竞彩专栏</a></li>
+                                <li><a href="//www.dszuqiu.com/articles/expert" style="letter-spacing: 6px; text-align:center !important; margin-left:5px;">专家号</a></li>
+                            </ul>
+                        </dd>
+                                                                <dd class="dsHasDropdown"><a href="//www.dszuqiu.com/live" data-dropdown="videoDropdown" aria-expanded="false" data-options="is_hover:true; hover_timeout:0; align:left;" onclick="window.location='//www.dszuqiu.com/live'">视频直播</a>
+                            <ul id="videoDropdown" class="f-dropdown topNavBarDropdown" data-dropdown-content="" aria-hidden="true" tabindex="-1">
+                                <li><a href="//www.dszuqiu.com/video">视频集锦</a></li>
+                                <li><a href="//www.dszuqiu.com/record">录像回放</a></li>
+                            </ul>
+                        </dd>
+                                        <!--<dd><a href="//www.dszuqiu.com/photos">足球图库</a></dd>-->                                <dd><a href="//www.dszuqiu.com/app">手机APP</a></dd>
+                                                                         <dd class="dsHasDropdown"><a href="//www.dszuqiu.com/wemedia" data-dropdown="tuanDropdown" aria-expanded="false" data-options="is_hover:true; hover_timeout:0; align:left;" onclick="window.location='//www.dszuqiu.com/wemedia'" rel="nofollow">专家号</a>
+                          <ul id="tuanDropdown" class="f-dropdown topNavBarDropdown" data-dropdown-content="" aria-hidden="true" tabindex="-1" style="margin-left:71px;">
+                              <li><a href="//www.dszuqiu.com/user/tuan_apply" rel="nofollow">专家团</a></li>
+                          </ul>
+                      </dd>
+                      
+                                                                                                  </dl>
+            <div class="topBarRight">
+              <ul>
+                                                                  </ul>
+            </div>
+                            <div class="topBarNavSearch">
+                  <form class="form-horizontal" id="data_search" role="form" action="//www.dszuqiu.com/data/search" method="get">
+                      <input type="text" class="searchField" id="search_name" name="search_name" placeholder="搜索你喜欢的球队、赛事" />
+                      <span class="topBarNavSearchBt"><i class="fa fa-search"></i></span>
+                  </form>
+              </div>
+                      </div>
+        </div>
+      </div>
+    </nav>
+                
+  <!-- main start -->
+  <main class="main">
+
+
+<div class="loginWrapper">
+    <h1>用户登录</h1>
+    <div class="loginPopupSignup">
+        <div class="row">
+            <div class="small-12 medium-7 columns">
+
+                <div class="login-content">
+                                        <form action="/login" method="post">
+                        <div class="row">
+                            <div class="small-1 columns"> </div>
+                            <div class="small-11 columns">
+                                <input type="text" class="form-control" id="zhanghu" name="zhanghu" placeholder="用户名 / 邮箱 / 手机号" required="" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="small-1 columns"> </div>
+                            <div class="small-11 columns">
+                                <input type="password" class="form-control" id="password" name="password" placeholder="密码" required="" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="small-1 columns"> </div>
+                            <div class="small-4 columns">
+                                <input type="text" class="radius" placeholder="5位" name="captcha_input" id="captcha_input" />
+                            </div>
+                            <div class="small-7  columns">
+                                <noscript>&lt;img src="/captcha" id="img_captcha"&gt;</noscript><img id="img_captcha" src="/captcha" class="loginCode vCode" /><a href="javascript: void(0);" id="refresh_captcha" class="button radius loginCodeRefresh"><i class="fa fa-refresh" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="small-1 columns"> </div>
+                            <div class="small-11 columns">
+                                <label><input type="checkbox" name="rememberMe" checked="" /> 7天内记住我</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="small-1 columns"> </div>
+                            <div class="small-11 columns">
+                                <button type="submit" class="button expand secondary radius">登录</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="small-12 columns text-right">
+                                <a href="/user/forgot_pass" class="loginForgotLink">找回密码</a>  | <a href="/signup" rel="nofollow" class="loginForgotLink">快速注册</a>                            </div>
+                        </div>
+
+                        <input type="hidden" value="1" id="bsubmit" name="bsubmit" />
+                    </form>
+                </div>
+            </div>
+            <div class="small-12 medium-5 columns text-center">
+                <div class="signUpSocial">
+                    <h2>第三方登录</h2>
+                    <div class="oauthLinkWrapper">
+                                                <a href="/oauth/qq" class="oauthLink"><img src="/assets/images/icons/socialQQ.png" width="50" alt="QQ登录" /></a> <a href="/oauth/weibo" class="oauthLink"><img src="/assets/images/icons/socialWeibo.png" width="50" alt="微博登录" /></a> <a href="/oauth/weixin" class="oauthLink"><img src="/assets/images/icons/socialWeixin.png" width="50" alt="微信登录" /></a>
+                                            </div>
+
+                    <p class="loginLinks">
+                        没有账号? <a href="/signup" rel="nofollow">马上注册 </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="/assets/js/signup.js?_=1"></script>
+
+
+</main></div>
+
+
+
+<footer class="main-footer">
+	<p class="MBTitle">
+问题咨询QQ：<a target="_blank" href="http://sighttp.qq.com/authd?IDKEY=8b1d9fb49b3d0f8476d0efda05d22e35e401a84f9c19b5ae" rel="nofollow" class="qqContact"><img src="/assets/images/qqContact-b.png" class="qqActive" title="问题反馈" width="20" /></a>  
+商务合作QQ：<a target="_blank" href="http://sighttp.qq.com/authd?IDKEY=c4c6bd5d3191bff4ef04095aafd88cac6ad52e1b1b4aeca3" rel="nofollow"><img src="/assets/images/qqContact-b.png" class="qqActive" title="商务合作" width="20" /></a>
+</p>
+	<p class="MBTitle">
+		<strong>声明：</strong> 本网资讯仅供体育爱好者进行比赛浏览观看研究之用，任何人不得用于非法用途，否则责任自负。所有内容不得违反国家法律规定，如有违者本网有权随时予以删除，并保留与有关部门合作追究的权利。
+	</p>
+<p class="MBTitle">
+			<a href="//www.dszuqiu.com/">足球比分</a> | <a href="//live.dszuqiu.com/">即时比分</a> | <a href="//live.dszuqiu.com/corner">角球比分</a> |  <a href="//www.dszuqiu.com/jczq">竞彩足球</a> | <a href="//www.dszuqiu.com/bjdc">北京单场</a> |
+        <a href="//www.dszuqiu.com/about-us" rel="nofollow">关于我们</a> | <a href="//www.dszuqiu.com/contact" rel="nofollow">意见反馈</a> | Copyright © 2018  DSZUQIU.COM. All Rights Reserved. 蜀ICP备14008209号	
+<!--
+  -->
+</p>
+<p class="MBTitle">
+	<a href="//www.dszuqiu.com/2018">2018俄罗斯世界杯专题</a>: <a href="//www.dszuqiu.com/2018/news">世界杯新闻</a> | <a href="//www.dszuqiu.com/2018/diary">世界杯赛程</a> |  <a href="//www.dszuqiu.com/2018/table">世界杯积分榜</a> | <a href="//www.dszuqiu.com/2018/teams">世界杯32强</a> | <a href="//www.dszuqiu.com/2018/about">世界杯场馆</a> | <a href="//www.dszuqiu.com/live/shijiebei">世界杯直播</a>
+</p>
+
+<div id="footerWechatQRCode" data-dropdown-content="" class="f-dropdown content" aria-hidden="true" tabindex="-1">
+				  <img src="/assets/images/wechatQRCode.jpg?_=2" width="60" />
+				  <span>关注DS足球官方微信</span>
+			  </div>
+</footer>
+
+
+
+<script>
+$(document).ready(function() {
+	 $('.topBarAccountLink').on('click', function(){
+                  $('#acountDrop').toggle();
+   });
+   $('.topBarAccount').hover(
+                 function () {
+                     $('#acountDropEn').show();
+                 },
+                 function () {
+                     $('#acountDropEn').hide();
+                 }
+             );
+   $('.fa-search').on('click', function(e) {
+      var text = $('.searchField').val();
+      if(text.length&lt;=0)return;
+      jQuery("#data_search").submit();
+    });
+  $(document).mouseup(function(e){
+    var _con = $('#acountDrop');
+    if(!_con.is(e.target) &amp;&amp; _con.has(e.target).length === 0 &amp;&amp; !$('.topBarAccount').is(e.target) &amp;&amp; $('.topBarAccount').has(e.target).length === 0){
+      $('#acountDrop').hide();
+    }
+  });
+
+	$('.iamNotAdClose').on('click', function(e){
+		e.preventDefault();
+		if(confirm('VIP可关闭广告')){
+			window.location="http://www.dszuqiu.com/user/vip";
+		}
+	});
+
+});
+</script>
+<script src="/assets/js/app.min.js?_=10"></script>
+
+
+
+
+
+
+</body></html>

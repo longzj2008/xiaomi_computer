@@ -1,0 +1,41 @@
+##############################
+## Folders                  ##
+##############################
+
+_pycache_
+
+data
+
+ds_data_now
+ds_data_test
+ds_data_train
+ds_data_weigh
+ds_model_weigh
+
+
+football_data
+test
+
+.idea
+
+ 
+##############################
+## Netbeans conf            ##
+##############################
+111.xlsx
+222.xlsx
+data_01.xlsx
+itchat.pkl
+now_games.xlsx
+trace_after_adjust.xlsx
+trace_before_adjust.xlsx
+##############################
+## нд╪Ч          ##
+##############################
+
+*.csv
+*.xlsx
+*.html
+*.pyc
+
+

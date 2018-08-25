@@ -1,0 +1,19 @@
+<img src="/assets/images/event/e.png" width="18"/>      #全场比分
+<img src="/assets/images/event/h.png" width="18"/>      #上半场比分
+<img src="/assets/images/event/d.png" width="18"/>      #首先达到x个角球
+<img src="/assets/images/event/it.png" width="18"/>      #补时信息
+
+<img src="/assets/images/event/hyc.png" width="18"/>    #主队黄牌
+<img src="/assets/images/event/gyc.png" width="18"/>    #客队黄牌
+
+<img src="/assets/images/event/hrc.png" width="18"/>    #主队红牌
+<img src="/assets/images/event/grc.png" width="18"/>    #客队红牌
+
+<img src="/assets/images/event/gg.png" width="18"/>     #客队进球
+<img src="/assets/images/event/hg.png" width="18"/>     #主队进球
+
+<img src="/assets/images/event/hc.png" width="18"/>     #主队角球
+<img src="/assets/images/event/gc.png" width="18"/>     #客队角球
+
+<img src="/assets/images/event/cd.png" width="18"/>     #比赛场地 状态
+<img src="/assets/images/event/tq.png" width="18"/>     #比赛天气 状态
